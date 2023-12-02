@@ -38,7 +38,7 @@ Users should be able to:
 ~~~ shell
 #1. Open project in VSCode --> install next (project dependency)  
 cd easybank-nextjs  
-npm install next@latest react@latest react-dom@latest  
+npm install next@13 react@latest react-dom@latest  
 
 #2. In terminal, start the project server  
 npm run dev
