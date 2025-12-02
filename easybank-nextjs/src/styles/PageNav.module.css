@@ -1,4 +1,3 @@
-
 .navMenu {
     width: 95%;
     display: flex;
@@ -39,12 +38,14 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: hsl(136, 65%, 51%);
+    background-color: 
+        hsl(136, 65%, 51%);
 }
 
 @media only screen and (min-width: 501px) {
     .navMenu {
-        transform: translateX(15%);
+        transform: 
+            translateX(15%);
     }
 }
 

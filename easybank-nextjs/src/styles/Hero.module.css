@@ -4,6 +4,7 @@
     padding-inline: 1.5em;
     padding-bottom: 2.4em;
 }
+
 .hero img {
     max-width: 100%;
     height: auto;
@@ -11,9 +12,11 @@
     position: relative;
     z-index: -1;
 }
+
 .hero div {
     margin-block: 1em;
 }
+
 .hero figure:after {
     content: '';
     width: 100%;
@@ -28,6 +31,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
 .hero div h1 { 
     margin: .4em .2em;
     text-align: center;
@@ -56,16 +60,20 @@
     .hero {
         flex-direction: row-reverse;
     }
+
     .hero figure {
         max-width: 50vw;
         height: 700px;
     }
+
     .hero img {
         margin-top: -120px;
-        margin-left: min( 50px, 5vw);
+        margin-left: 
+            min( 50px, 5vw);
         max-width: initial;
         max-height: 120%;
     }
+
     .hero figure:after {
         max-width: 50%;
         height: 700px;
@@ -74,20 +82,25 @@
             url(../../public/images/bg-intro-desktop.svg);
         background-position: 0 90%;
     }
+
     .hero {
         height: 33em;
     }
+
     .hero div {
         max-width: 7500px;
         margin-left: 10%;
     }
+
     .hero div h1, .hero div p, .hero div button  {
         text-align: left;
         align-self: left;
     }
+
     .hero div button {
         margin: 2em 0;
     }
+
     .hero div h1 {
         margin: .5em 0;
     }
@@ -100,7 +113,8 @@
 
 @media only screen and (min-width: 769px) {
     .hero img {
-        margin-left: max( 90px, 18vw);
+        margin-left: 
+            max( 90px, 18vw);
     }
 }
 
