@@ -34,7 +34,7 @@ Developers: follow the below steps following a repository clone to create the de
 ~~~ shell
 #1. Open project in VSCode --> install next (project dependency)  
 cd easybank-nextjs  
-npm install next@13 react react-dom --legacy-peer-deps  
+npm install   
 
 #2. In terminal, start the project server  
 npm run dev
