@@ -7,7 +7,7 @@ export default function Header() {
     const [display, setDisplay] = useState(false);
     return (
         <header className={styles.topNavigation + " " + 'md:hidden'}>
-            <img src={"/images/logo.svg"} alt={"Easybank logo"}/>
+            <img src={"/images/logo.svg"} alt={"Easybank logo"} width="150px" height="auto"/>
             <div onClick={() => setDisplay((prevDisplay) => !prevDisplay)} id={styles.collapseMenuButton}>
             {
                 display ? 

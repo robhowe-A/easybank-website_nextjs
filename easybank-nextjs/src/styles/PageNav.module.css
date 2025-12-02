@@ -58,14 +58,11 @@
 
     .navMenu ul {
         display: flex;
-        width: 75%;
-        margin-left: 20%;
     }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1100px) {
     .navMenu ul {
-        width: 45%;
         margin-left: 30%;
     }
 }
