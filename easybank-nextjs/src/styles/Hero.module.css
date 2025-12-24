@@ -1,0 +1,125 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.5em;
+    padding-bottom: 2.4em;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -35%;
+    position: relative;
+    z-index: -1;
+}
+
+.hero div {
+    margin-block: 1em;
+}
+
+.hero figure:after {
+    content: '';
+    width: 100%;
+    height: 450px;
+    background-image: 
+        url(../../public/images/bg-intro-mobile.svg);
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    z-index: -2;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero div h1 { 
+    margin: .4em .2em;
+    text-align: center;
+    letter-spacing: 0.002rem;
+}
+
+.hero div p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7 !important;
+}
+
+.hero div button {
+    width: max-content;
+    margin: 2em calc(50% - 6em);
+    padding: 1.07em 2.9em;
+    border-radius: 100vw;
+    background:
+        linear-gradient(to right, #61cb86,#63b4bf);
+    border: 1px solid #d9ffe9;
+    color: #e4fffa;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 480px) {
+    .hero {
+        flex-direction: row-reverse;
+    }
+
+    .hero figure {
+        max-width: 50vw;
+        height: 700px;
+    }
+
+    .hero img {
+        margin-top: -120px;
+        margin-left: 
+            min( 50px, 5vw);
+        max-width: initial;
+        max-height: 120%;
+    }
+
+    .hero figure:after {
+        max-width: 50%;
+        height: 700px;
+        background-size: 1050px 850px;
+        background-image: 
+            url(../../public/images/bg-intro-desktop.svg);
+        background-position: 0 90%;
+    }
+
+    .hero {
+        height: 33em;
+    }
+
+    .hero div {
+        max-width: 7500px;
+        margin-left: 10%;
+    }
+
+    .hero div h1, .hero div p, .hero div button  {
+        text-align: left;
+        align-self: left;
+    }
+
+    .hero div button {
+        margin: 2em 0;
+    }
+
+    .hero div h1 {
+        margin: .5em 0;
+    }
+
+    .hero div p {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hero img {
+        margin-left: 
+            max( 90px, 18vw);
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .hero div h1 {
+        margin-top: 1.5em;
+    }
+}
